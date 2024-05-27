@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello I am Leul mitiku</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+  .container { width: 80%; margin: auto; overflow: hidden; }
+  header { background: #333; color: #ffffff; padding-top: 30px; min-height: 70px; border-bottom: yellow 3px solid; }
+  header a { color: #ffffff; text-decoration: none; text-transform: uppercase; font-size: 16px; }
+  header ul { padding: 0; list-style: none; }
+  header li { display: inline; padding: 0 20px 0 20px; }
+  header #branding { float: left; }
+  header #branding h1 { margin: 0; }
+  header nav { float: right; margin-top: 10px; }
+  header .highlight, header .current a { color: #e8491d; font-weight: bold; }
+  header a:hover { color: #ffffff; font-weight: bold; }
+  #showcase { min-height: 400px; background: url('basketball-football.jpg') no-repeat 0 -400px; text-align: center; color: #ffffff; }
+  #showcase h1 { margin-top: 100px; font-size: 55px; margin-bottom: 10px; }
+  #showcase p { font-size: 20px; }
+  footer { background: #333; color: white; text-align: center; padding: 10px 0; }
+  @keyframes slideInFromLeft {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+  }
+  .animated { animation: 1s ease-out 0s 1 slideInFromLeft; }
+  .cen{
+       max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    
+  }
+</style>
+</head>
+<body>
+  <header>
+ 
+        <img src="leflafi.jpg" alt="Leul Mitiku's photo" class="cen">
+      
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Leul</span> Mitiku</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="#showcase">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="showcase" class="animated">
+    <div class="container" style="color: gray">
+      <h1>Information Science & Sports Enthusiast</h1>
+      <p>Exploring the synergy between technology and sports.</p>
+    </div>
+  </section>
+
+  <section id="about" class="animated">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>I'm Leul Mitiku, an Information Science student at Mekelle University. I'm passionate about sports, especially football and basketball, and I love applying my tech skills to analyze and improve athletic performance.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="animated">
+    <div class="container">
+      <h1>My Projects</h1>
+      <p> data analysis on football statistics</p>  
+      <p> web based basketball score board</p>
+         </div>
+  </section>
+
+  <section id="contact" class="animated">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out to me for collaborations or just to say hi!</p>
+      <p>Email: <a href="mailto:leulshine626@gmail.com">leulshine626@gmail.com</a></p>
+      <p>address:Ethiopia Mekelle</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Leul Mitiku © 2024</p>
+  </footer>
+
+  <script>
+    
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+x
